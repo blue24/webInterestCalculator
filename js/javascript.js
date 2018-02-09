@@ -199,6 +199,8 @@ function chkContinuous_onChange_auto(){
 
 function chkContinuous_onChange(isChecked){
     
+    clearOutputs();
+    
     if( isChecked ) {
         compoundPeriodsMemory = $("#inputCompoundPeriods").val();
         $("#inputCompoundPeriods").prop("type", "text");
