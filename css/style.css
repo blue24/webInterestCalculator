@@ -315,7 +315,6 @@ label.ui-checkbox-on, label.ui-checkbox-off{
 
 .ui-input-text input,.ui-input-search input {
 	margin:0;
-	min-height:2.2em;
 	text-align:left;
 	border:0;
 	background:transparent none;
@@ -423,9 +422,9 @@ button.ui-btn{
 
 div.divOutput{
     border-width: 1px 1px 1px 1px;
-    padding:6px 8px 6px 8px;
+    padding:2px 6px 2px 6px;
     min-width:240px;
-    min-height:2.1em;
+    min-height:1.9em;
     border-style: solid;
     border-color: #005000;
     border-radius: 12px;
