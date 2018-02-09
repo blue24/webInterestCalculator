@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+    xmlns:gap   = "http://phonegap.com/ns/1.0"
+    id          = "edu.iupui.cs.cdawalt.webInterestCalculator"
+    versionCode = "10"
+    version     = "1.0.0" >
+
+    
+  <name>Interest Calculator</name>
+
+  <description>
+      The Interest Calculator, built for Android devices using Adobe PhoneGap.
+  </description>
+
+  <author href="cs.iupui.edu/~cdawalt" email="cdawalt@iupui.edu">
+      Chris Dawalt
+  </author>
+  
+  
+  <!-- settings (credit to Prof. Harris's BMI project)-->
+  
+  <gap:platform name="android" />
+  <preference name="fullscreen" value="true" />
+  <icon src="img/icon/img_icon_interestcalc.png" />
+  
+  <preference name="permissions" value="none"/>
+
+</widget>
