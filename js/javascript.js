@@ -124,18 +124,6 @@ $(document).ready(function(){
         clearError();
     });
     
-    $("#formMain").submit(function(arg_ev){
-    
-        arg_ev.preventDefault();
-    
-        $("#inputPrincipal").val("666");
-        alert("WOO HOO!");
-        
-        //nope.
-        //this.submit();
-        
-    });
-    
     
     //init here.
     radGrp_onChange(   );
