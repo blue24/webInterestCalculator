@@ -95,8 +95,8 @@ $(document).ready(function(){
             
             
             //Forget this is meant to be a decimal?
-            if(inputInterestRate > 1){
-                showError("WARNING: interest rate is above 1 (above 100%).");
+            if(inputInterestRate >= 1){
+                showError("WARNING: interest rate is 1 or more (100%).");
                 errorPromptHappened = true;
             }
             

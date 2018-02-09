@@ -196,7 +196,7 @@ p.pSubHeader{
 }
 
 
-p.pOutput{
+div.divOutput{
     border-width: 1px 1px 1px 1px;
     padding:6px 8px 6px 8px;
     min-width:240px;
@@ -204,7 +204,8 @@ p.pOutput{
     border-style: solid;
     border-color: #005000;
     border-radius: 12px;
-
+    vertical-align:middle;
+    display:inline-block;
 }
 
 div.divError{
