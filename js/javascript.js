@@ -9,7 +9,7 @@
 
 
 var errorPromptHappened = false;
-
+var compoundPeriodsMemory = "";
 
 
 $(window).on("load", function(){
@@ -200,15 +200,26 @@ function chkContinuous_onChange_auto(){
 function chkContinuous_onChange(isChecked){
     
     if( isChecked ) {
+        compoundPeriodsMemory = $("#inputCompoundPeriods").val();
+        $("#inputCompoundPeriods").prop("type", "text");
         $("#inputCompoundPeriods").val( String.fromCharCode(8734) );
         $("#inputCompoundPeriods").prop("readonly", true);
     }else{
     
         ////This browser may have form memory. If so, overwrite the old value ONLY IF it is infinity here. Otherwise, imply they wanted to keep what is here already.
         if($("#inputCompoundPeriods").val() == String.fromCharCode(8734) ){
-            $("#inputCompoundPeriods").val( "" );
+        
+            if(compoundPeriodsMemory != ""){
+                //restore what the user entered before.
+                $("#inputCompoundPeriods").val( compoundPeriodsMemory );
+            }else{
+                //blank it.
+                $("#inputCompoundPeriods").val( "" );
+            }
+            
         }
         $("#inputCompoundPeriods").prop("readonly", false);
+        $("#inputCompoundPeriods").prop("type", "number");
     }
     
 }
