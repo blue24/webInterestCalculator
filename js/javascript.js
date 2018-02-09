@@ -227,6 +227,8 @@ function chkContinuous_onChange(isChecked){
 function radGrp_onChange(){
     var myVal = $("#radGrpInterestType input:checked").val();
     
+    clearOutputs();
+    
     if(myVal == "Simple"){
         $(".divHidable").addClass("divHidden");
     }else{    //Compound

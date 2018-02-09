@@ -20,7 +20,7 @@
   <!-- settings (credit to Prof. Harris's BMI project)-->
   
   <gap:platform name="android" />
-  <preference name="fullscreen" value="true" />
+  <preference name="fullscreen" value="false" />
   <icon src="img/icon/img_icon_interestcalc.png" />
   
   <preference name="permissions" value="none"/>
